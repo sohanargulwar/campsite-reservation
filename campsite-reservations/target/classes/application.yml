@@ -1,0 +1,17 @@
+server:
+  port: 9899
+spring:
+  datasource:
+    type: org.springframework.jdbc.datasource.DriverManagerDataSource
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/campsite-reservations
+    username: user
+    password: user
+  jpa:
+    hibername:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
